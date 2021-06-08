@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+.visual {
+  top: 100px;
+  position: relative;
+}
+
+.visual > div {
+  left: 19%;
+}
+
+.visual button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.visual button::before {
+  font-family: "xeicon";
+  color: #fff;
+  font-size: 45px;
+}
+
+.visual button.slick-prev {
+  left: 50px;
+  font-size: 0;
+  color: transparent;
+}
+.visual button.slick-prev:before {
+  content: "\e93d";
+}
+
+.visual button.slick-next {
+  right: 50px;
+  font-size: 0;
+  color: transparent;
+}
+.visual button.slick-next:before {
+  content: "\e940";
+}
